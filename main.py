@@ -79,14 +79,44 @@ import matplotlib.pyplot as plt
 # for row in dframe[["OCCUR_DATE", "OCCUR_TIME"]].itertuples(index=False): #greiciau
 #     print(row.OCCUR_DATE, row.OCCUR_TIME)
 
-dframe = pd.read_csv('auto.csv', sep='|', on_bad_lines='skip')
-# print(dframe.columns.tolist())
-# print(dframe['price'])
-print(len(dframe))
-expencive_cars = dframe[(pd.to_numeric(dframe['price'], errors='coerce') >= 500) |
-                        (dframe['gamintojas'] == 'Volvo')]
-print(len(expencive_cars))
+# dframe = pd.read_csv('auto.csv', sep='|', on_bad_lines='skip')
+# # print(dframe.columns.tolist())
+# # print(dframe['price'])
+# print(len(dframe))
+# expencive_cars = dframe[(pd.to_numeric(dframe['price'], errors='coerce') >= 500) |
+#                         (dframe['gamintojas'] == 'Volvo')]
+# print(len(expencive_cars))
+#
+# min_val = dframe["price"].min()
+# max_val = dframe["price"].max()
+# print(min_val, max_val)
 
-min_val = dframe["price"].min()
-max_val = dframe["price"].max()
-print(min_val, max_val)
+
+data = [
+    ['Jonas','39001125478',28],#0
+    ['Petras','39001125479',31],#1
+    ['Kazys','39001125477',24],#2
+    ['Leonidas','39001123478',26],#3
+    ['Vilius','39001125148',28],#4
+]
+
+
+dframe = pd.DataFrame(data, columns=['vardas','asmens kodas','amzius'])
+dframe['id'] = [1,2,6,40,45]
+print(dframe)
+print("-------")
+dframe.set_index('id',inplace=True) # jei kalbam apie duomenis is DB tai turime primary key
+print(dframe)
+print(dframe.loc[6]) # where id = 6
+print(dframe.iloc[2]) # masyve esantis elementas 3cioje pozicijoje
+dframe.drop('asmens kodas', axis=1,inplace=True)
+print(dframe)
+dframe.drop(40,axis=0, inplace=True)
+print(dframe)
+
+dframe.loc[2] = ['PETRAS',24] #Updeitinam visa eilute
+print(dframe)
+dframe.loc[2,'vardas'] = 'Petras' #keiciu viena reiksme
+print(dframe)
+
+
