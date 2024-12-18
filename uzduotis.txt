@@ -1,0 +1,25 @@
+pasirinkti BTC ir dar (BENT) dvi crypto valiutas.(galite Ethereum ir dogecoin, arba ką norite)
+sukurti dframe kuriame būtų visos trys crypto valiutos.
+
+atkreipkite dėmesį į datas, ne visų datos sutaps. nuspręskite ką darysite, ar mažinsite duomenų imtį, ar pabaudosite užpildymą
+nuliais, ar bfill, ffill.
+
+atvaizduoti duomenis stulpeliais. Mirga marga? šaunu, veikia :)
+
+pagalvokite analitiškai kokius duomenis galite išgauti? Ką galite sužinoti? Galbūt yra kainų priklausomybė, gal kažkurios
+atrodo stabilesnės, (std).
+
+antras žingsnis atvaizdavus duomenis pagalvoti ką iš jų norite ištraukti. susirašykite hipotezes kurias norite patikrinti.
+tikslas - uždirbti pinigų perkant/parduodant crypto.
+
+bandykite tas hipotezes patikrinti metodais kuriuos jau mokėmės, bei tai ką pavyks patiems surasti.
+
+kodas turi būti tvarkingas. pirmas skirsnis, duomenų užkrovimas ir apsitvarkymas. toliau vizualiai matoma, kad tikrinama
+x hipotezė. po skaičiaivmų ir atvaizdavimų trumpai aprašykite žemiau '''kaip komentarą,''' ką pavyko išsiaiškinti ir ko ne.
+galbūt nepavyko gauti norimo vaizdo. galbūt gautas vaizdas neatspindėjo tų duomenų kurių tikėjotes. tai yra tyrimas, tad
+bet koks rezultatas yra pažanga.
+
+nebijokite naudoti nematytų bibliotekų, BET. kai padarote kodą kuris jau kažką  daro, ir tai atrodo kaip "milestone", pushinkit į
+githubą. Jei ką nors sugadinsite experimentuodami galėsime gražiai viską atstatyti iš paskutinės githubo versijos.
+
+sėkmės, būkite smalsūs ir kūrybiški :)
